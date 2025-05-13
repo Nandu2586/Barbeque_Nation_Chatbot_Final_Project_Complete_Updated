@@ -1,0 +1,21 @@
+
+    Final Project Report
+    
+    **Project Overview:**
+    The chatbot system was built for Barbeque Nation, focusing on automating the interaction process for booking, menu inquiries, and cancellations. The system integrates **RetellAI** for dynamic state transitions, allowing the chatbot to guide the user smoothly through various conversational states.
+    
+    **Objectives & Implementation:**
+    - **Backend Development**: The backend was built using **Flask** to serve the knowledge base (e.g., booking info, menu items) through an API. **RetellAI** was used to handle state transitions and responses.
+    - **Frontend Development**: The frontend provides a simple, interactive UI where users can query the chatbot. It interacts with the backend API to receive dynamic responses, based on the user input and the conversation context.
+    - **RetellAI Integration**: The chatbot’s state machine was integrated with **RetellAI**, which manages different conversation stages and transitions. For example, the chatbot asks for user details (e.g., name, number of guests) and confirms bookings or cancellations.
+    
+    **Challenges:**
+    - The main challenge was ensuring smooth state transitions while integrating **RetellAI**. The system needed to handle multiple conversational states and accurately reflect the user's intent.
+    
+    **Results:**
+    - The chatbot successfully handles dynamic conversations, providing relevant information about bookings, menu items, and cancellations.
+    
+    **Future Improvements:**
+    - **Expanding the Knowledge Base**: Include more detailed FAQs, special offers, etc.
+    - **User Feedback**: Incorporate a mechanism to collect user feedback on chatbot performance.
+    

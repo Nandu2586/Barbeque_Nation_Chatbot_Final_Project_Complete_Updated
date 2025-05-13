@@ -1,0 +1,33 @@
+
+    API Documentation
+    
+    1. **GET /query**
+        - Description: Queries the knowledge base for information related to bookings, menu items, cancellations, etc.
+        - Parameters: query (string) - The user query to ask the chatbot.
+        - Example Request:
+          ```
+          GET /query?query=menu
+          ```
+        - Example Response:
+          ```json
+          {
+            "response": "Our menu includes a variety of vegetarian and non-vegetarian dishes."
+          }
+          ```
+
+    2. **Error Handling**
+        - If the query does not match any knowledge base content, the API will return:
+          ```json
+          {
+            "response": "Sorry, I don't have an answer to that question."
+          }
+          ```
+    3. **Post-Call Analysis Integration**:
+        - Logs interaction details to **Google Sheets** for further analysis, including:
+            - Call time
+            - User phone number
+            - Call outcome (booking, cancellation, inquiry)
+    
+    4. **API Security**:
+        - The API uses basic authentication methods to ensure secure communication.
+    
